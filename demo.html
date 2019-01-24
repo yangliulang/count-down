@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>倒计时</title> 
+<script type="text/javascript" src="../../js/lib/jquery.js"></script>
+<script type="text/javascript" src="PZ_JTimer.js"></script>
+</head> 
+<body style="padding:100px;">  
+<div id="countdown" data-nowTime="2015-10-14 10:32:00" data-startTime="2015-10-14 10:32:01">2013-09-04 09:35:00</div>
+<div id="countdown1" data-nowTime="2013-09-04 13:35:00" data-startTime="2014-09-04 13:35:00">2013-09-04 13:35:00</div>
+<script>
+
+var timer=new PZ_JTimer({
+		timerBox:$("#countdown"),
+		callBack:function(){
+			$(this).css("color","red");
+		}
+	});
+	var timer1=new PZ_JTimer({
+			timerBox:$("#countdown1"),
+			callBack:function(){
+				$(this).css("color","red");
+			}
+		});
+</script>
+
+
+
+</body> 
+
+</html>
